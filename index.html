@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimación de Costos COCOMO 1</title>
+    <link rel="stylesheet" href="./style_demo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estimación de Costos COCOMO 1</h1>
+        <h2>Autor: Nelson Mamani Cuyuña</h2>
+        <form id="estimacion-form">
+            <label for="entrada">Cantidad de Flujo de Entradas:</label>
+            <input type="number" id="entrada" name="entrada" required min="0">
+            
+            <label for="salida">Cantidad de Flujo de Salidas:</label>
+            <input type="number" id="salida" name="salida" required min="0">
+            
+            <label for="salario">Salario Minimo o Promedio de un Desarrollador (Bolivianos):</label>
+            <input type="number" id="salario" name="salario" required min="0">
+            
+            <label for="tipo-proyecto">Tipo de Proyecto:</label>
+            <select id="tipo-proyecto" name="tipo-proyecto" required>
+                <option value="#">Selecciona</option>
+                <option value="orgánico">Orgánico</option>
+                <option value="semi-acoplado">Semi-acoplado</option>
+                <option value="acoplado">Acoplado</option>
+            </select>
+
+            <label for="rango">Rango de Líneas de Código (LDC):</label>
+            <p id="texto-rango" class="rango-indicador"></p> <!-- Texto del rango dinámico -->
+            <input type="number" id="rango" name="rango" required min="0">
+            
+
+            
+            <button type="submit" id="calcular">Calcular</button>
+            <button type="reset" id="nuevo">Nuevo</button>
+        </form>
+
+        <div id="result-area">
+            <h2>Resultados:</h2>
+            <p id="cantidad-total-entradas-salidas"></p>
+            <p id="calculo-de-lineas-de-codigo"></p>
+            <p id="calculo-de-Miles-de-lineas-de-codigo"></p>
+            <p id="esfuerzo-nominal"></p>
+            <p id="tiempo-desarrollo"></p>
+            <p id="estimacion-de-productividad"></p>
+            <p id="costo-de-software"></p>
+            <p id="costo-por-linea-de-codigo"></p>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

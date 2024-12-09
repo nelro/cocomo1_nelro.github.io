@@ -1,0 +1,140 @@
+/* Fondo general con gradiente turquesa */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #11998e;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #11998e; /* Verde turquesa */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #38ef7d; /* Línea decorativa */
+    padding-bottom: 10px;
+}
+
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiquetas */
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs y select */
+form input, form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #cce3e6;
+    border-radius: 5px;
+    outline: none;
+    background: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* Efectos en inputs y select */
+form input:focus, form select:focus {
+    border-color: #38ef7d;
+    background: #f3fdfc;
+}
+
+/* Botones */
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Botón calcular */
+form button#calcular {
+    background: linear-gradient(90deg, #38ef7d, #11998e);
+    color: white;
+}
+
+form button#calcular:hover {
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+}
+
+/* Botón nuevo */
+form button#nuevo {
+    background: #f44336;
+    color: white;
+}
+
+form button#nuevo:hover {
+    background: #d32f2f;
+}
+
+/* Indicador del rango */
+.rango-indicador {
+    font-size: 0.9rem;
+    color: #11998e;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Área de resultados */
+#result-area {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f3fdfc;
+    border-radius: 10px;
+    color: #333;
+    border: 2px solid #cce3e6;
+}
+
+/* Título de resultados */
+#result-area h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #11998e;
+}
+
+/* Resultados individuales */
+#result-area p {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #cce3e6;
+}
